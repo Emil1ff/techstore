@@ -65,13 +65,13 @@ export default function ProfilePage() {
           <CardContent>
             <div className={styles.avatarSection}>
               <div className={styles.avatarContainer}>
-                <Avatar className={styles.avatar}>
+                {/* <Avatar className={styles.avatar}>
                   <AvatarImage src={formData.avatar} />
                   <AvatarFallback>
                     {formData.name.charAt(0)}
                     {formData.surname.charAt(0)}
                   </AvatarFallback>
-                </Avatar>
+                </Avatar> */}
                 <div className={styles.avatarBadge}></div>
               </div>
             </div>
