@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux"
 import type { RootState } from "@/redux/store"
 import { updateUser } from "@/redux/slices/authSlice"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+// import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { User, Mail, Camera } from 'lucide-react'
 import ProtectedRoute from "@/components/ProtectedRoute"
 import styles from "@/styles/Profile.module.css"
