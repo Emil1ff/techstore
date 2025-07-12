@@ -19,7 +19,6 @@ export default function ProfilePage() {
     name: user?.name || "",
     surname: user?.surname || "",
     email: user?.email || "",
-    avatar: user?.avatar || "",
   })
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState("")
@@ -119,18 +118,7 @@ export default function ProfilePage() {
                 />
               </div>
 
-              <div className={`${styles.field} ${styles.fullWidth}`}>
-                <label>
-                  <Camera size={16} /> Şəkil URL
-                </label>
-                <input
-                  type="url"
-                  name="avatar"
-                  value={formData.avatar}
-                  onChange={handleChange}
-                  placeholder="Profil şəklinizin linkini daxil edin"
-                />
-              </div>
+              
 
               <button type="submit" disabled={loading} className={styles.submitButton}>
                 {loading ? "🔄 Yenilənir..." : "💾 Profili yenilə"}
