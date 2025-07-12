@@ -66,7 +66,7 @@ export default function ProfilePage() {
             <div className={styles.avatarSection}>
               <div className={styles.avatarContainer}>
                 <Avatar className={styles.avatar}>
-                  <AvatarImage src={formData.avatar || "/placeholder.svg"} />
+                  <AvatarImage src={formData.avatar} />
                   <AvatarFallback>
                     {formData.name.charAt(0)}
                     {formData.surname.charAt(0)}
