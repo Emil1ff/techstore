@@ -41,8 +41,8 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Card className={styles.card}>
         <CardContent className={styles.content}>
           <div className={styles.imageContainer}>
-            <Image
-              src={product.image || "/placeholder.svg"}
+            <img
+              src={product.image}
               alt={product.name}
               width={300}
               height={300}

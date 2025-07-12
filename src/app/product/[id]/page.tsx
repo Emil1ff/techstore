@@ -78,7 +78,7 @@ export default function ProductDetailPage() {
     >
       <div className={styles.productDetail}>
         <div className={styles.imageSection}>
-          <Image
+          <img
             src={product.image || "/placeholder.svg"}
             alt={product.name}
             width={500}

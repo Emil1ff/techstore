@@ -76,7 +76,7 @@ export default function CartPage() {
               {cartProducts.map((item) => (
                 <Card key={item!.id} className={styles.cartItem}>
                   <CardContent className={styles.itemContent}>
-                    <Image
+                    <img
                       src={item!.image || "/placeholder.svg"}
                       alt={item!.name}
                       width={100}
