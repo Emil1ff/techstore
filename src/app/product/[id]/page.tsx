@@ -13,7 +13,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Heart, ShoppingCart, Check } from "lucide-react"
 import styles from "@/styles/ProductDetail.module.css"
-import { Image } from "@radix-ui/react-avatar"
+import Image from "next/image"
+// import { Image } from "@radix-ui/react-avatar"
 
 export default function ProductDetailPage() {
   const params = useParams()

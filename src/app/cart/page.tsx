@@ -12,7 +12,8 @@ import { Trash2, Plus, Minus, ShoppingCart } from 'lucide-react'
 import Link from "next/link"
 import ProtectedRoute from "@/components/ProtectedRoute"
 import styles from "@/styles/Cart.module.css"
-import { Image } from "@radix-ui/react-avatar"
+import Image from "next/image"
+// import { Image } from "@radix-ui/react-avatar"
 
 export default function CartPage() {
   const dispatch = useDispatch()
