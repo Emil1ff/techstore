@@ -8,7 +8,6 @@ import { useSelector, useDispatch } from "react-redux"
 import type { RootState } from "@/redux/store"
 import { updateUser } from "@/redux/slices/authSlice"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-// import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { User, Mail, Camera } from 'lucide-react'
 import ProtectedRoute from "@/components/ProtectedRoute"
 import styles from "@/styles/Profile.module.css"
@@ -65,13 +64,6 @@ export default function ProfilePage() {
           <CardContent>
             <div className={styles.avatarSection}>
               <div className={styles.avatarContainer}>
-                {/* <Avatar className={styles.avatar}>
-                  <AvatarImage src={formData.avatar} />
-                  <AvatarFallback>
-                    {formData.name.charAt(0)}
-                    {formData.surname.charAt(0)}
-                  </AvatarFallback>
-                </Avatar> */}
                 <div className={styles.avatarBadge}></div>
               </div>
             </div>

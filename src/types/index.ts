@@ -15,7 +15,6 @@ export interface User {
   surname: string
   email: string
   password: string
-  avatar?: string
   wishlist: number[]
   cart: CartItem[]
 }

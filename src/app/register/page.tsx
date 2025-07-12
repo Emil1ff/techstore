@@ -20,7 +20,6 @@ export default function RegisterPage() {
     surname: "",
     email: "",
     password: "",
-    avatar: "",
     wishlist: [],
     cart: []
   })
@@ -123,18 +122,7 @@ export default function RegisterPage() {
               />
             </div>
 
-            <div className={`${styles.field} ${styles.fullWidth}`}>
-              <label>
-                <Camera size={16} /> Şəkil URL (ixtiyari)
-              </label>
-              <input
-                type="url"
-                name="avatar"
-                value={formData.avatar}
-                onChange={handleChange}
-                placeholder="Profil şəklinizin linkini daxil edin"
-              />
-            </div>
+            
 
             <button type="submit" disabled={loading} className={styles.submitButton}>
               {loading ? "🔄 Qeydiyyat edilir..." : "🎉 Qeydiyyatdan keç"}
