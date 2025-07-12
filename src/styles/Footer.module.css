@@ -1,0 +1,112 @@
+.footer {
+  background: linear-gradient(135deg, var(--card) 0%, var(--muted) 100%);
+  border-top: 1px solid var(--border);
+  margin-top: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section {
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.section h3,
+.section h4 {
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.section h3 {
+  background: linear-gradient(135deg, var(--primary) 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+}
+
+.section p,
+.section li {
+  color: var(--muted-foreground);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+}
+
+.section li:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section li:last-child {
+  border-bottom: none;
+}
+
+.bottom {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted-foreground);
+  background: var(--muted);
+  margin: 0 -2rem -2rem;
+  padding: 2rem;
+  border-radius: 16px 16px 0 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section {
+    padding: 1.25rem;
+  }
+}

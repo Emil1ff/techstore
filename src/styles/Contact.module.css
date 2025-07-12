@@ -1,0 +1,255 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card styling */
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  height: 100%; /* Ensure cards take full height in grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.cardContent {
+  padding: 0;
+  flex-grow: 1; /* Allow content to expand */
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contactItem .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contactItem h4 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.contactItem p {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.formCard {
+  /* Inherits .card styles */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.field label {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* Input and Textarea styling */
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--card-background);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: auto;
+  align-self: flex-start;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitButton {
+  margin-top: 1rem; /* Add some space above the submit button */
+}
+
+.success {
+  text-align: center;
+  padding: 2.5rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+}
+
+.success h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+.success p {
+  color: #155724;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.success .button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.success .button:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .cardTitle {
+    font-size: 1.4rem;
+  }
+  .contactInfo {
+    gap: 1.5rem;
+  }
+  .contactItem h4 {
+    font-size: 1rem;
+  }
+  .contactItem p {
+    font-size: 0.9rem;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
