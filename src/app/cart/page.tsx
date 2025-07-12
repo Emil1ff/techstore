@@ -7,11 +7,12 @@ import type { RootState } from "@/redux/store"
 import { removeFromCart, updateQuantity, clearCart } from "@/redux/slices/cartSlice"
 import type { Product } from "@/types"
 import { Card, CardContent } from "@/components/ui/card"
-import { Trash2, Plus, Minus, ShoppingCart, Image } from 'lucide-react'
+import { Trash2, Plus, Minus, ShoppingCart } from 'lucide-react'
 // import Image from "next/image"
 import Link from "next/link"
 import ProtectedRoute from "@/components/ProtectedRoute"
 import styles from "@/styles/Cart.module.css"
+import { Image } from "@radix-ui/react-avatar"
 
 export default function CartPage() {
   const dispatch = useDispatch()
