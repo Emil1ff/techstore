@@ -21,6 +21,8 @@ export default function RegisterPage() {
     email: "",
     password: "",
     avatar: "",
+    wishlist: [],
+    cart: []
   })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
