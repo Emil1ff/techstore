@@ -16,22 +16,7 @@
       ],
       "inStock": true
     },
-    {
-      "id": 2,
-      "name": "iMac 24\" M3",
-      "category": "computers",
-      "price": 1699,
-      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-imac-24-touch-id-blue-202402?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=NnFaN1RuVWhieERIemtXZmdTMy8yZXFZWHk4bElXaVVJMXBXV29XTnhzeW44eER5RDBEOWM4QlpPOTl5LzVzRFhlTGo1ei9vd2ZpbFUvSUs3SDhMWlQ1K2czVXVTS3RCR282a0t2aDlHRlp3SEJYcnFoWElEQkVWajZ5NGlidzM",
-      "description": "Rəngarəng və güclü iMac. M3 çipi ilə hər şey daha sürətli.",
-      "features": [
-        "M3 çip",
-        "8GB Unified Memory",
-        "256GB SSD",
-        "24-düym 4.5K Retina ekran",
-        "1080p FaceTime HD kamera"
-      ],
-      "inStock": true
-    },
+    
     {
       "id": 3,
       "name": "Gaming Desktop RTX 4080",
@@ -94,16 +79,7 @@
       ],
       "inStock": true
     },
-    {
-      "id": 8,
-      "name": "LG 27\" 4K Monitor",
-      "category": "accessories",
-      "price": 449,
-      "image": "https://www.lg.com/content/dam/channel/wcms/in/monitors/ultrafine/lg-com-pdp-kit_27us500_ultrafine_2024/gallery/27US500-W-dz.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
-      "description": "27-düym 4K UHD monitor. HDR10 dəstəyi və USB-C hub.",
-      "features": ["4K UHD (3840x2160)", "HDR10 dəstəyi", "USB-C hub", "IPS panel", "99% sRGB"],
-      "inStock": true
-    },
+    
     {
       "id": 9,
       "name": "Samsung 32\" Curved Gaming Monitor",
