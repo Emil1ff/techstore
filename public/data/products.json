@@ -148,16 +148,7 @@
       "features": ["2TB tutum", "PCIe 4.0 NVMe", "7000 MB/s oxuma sürəti", "Samsung Magician proqramı", "5 il zəmanət"],
       "inStock": true
     },
-    {
-      "id": 14,
-      "name": "WD Black 4TB HDD",
-      "category": "accessories",
-      "price": 129,
-      "image": "https://www.storagereview.com/wp-content/uploads/2012/12/StorageReview-Western-Digital-Black-4TB.jpg",
-      "description": "4TB yüksək performanslı hard disk. Oyunlar və böyük fayllar üçün ideal.",
-      "features": ["4TB tutum", "7200 RPM", "256MB cache", "SATA 6Gb/s", "Oyunlar üçün optimallaşdırılmış"],
-      "inStock": true
-    },
+    
     {
       "id": 15,
       "name": "Razer DeathAdder V3",
